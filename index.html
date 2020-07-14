@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>rospartnerTest</title>
+</head>
+<body>
+    <div class="root">
+        <div class="work-profile">
+            <h1>Профиль рабочей группы</h1>
+            <p>В данном разделе вы можете посмотреть и отредактировать информацию по своей рабочей группе, настроить права участников, расшарить настройки полностью или частично для других рабочих групп, а также сделать полную копию вашей рабочей группы с ограниченным доступом для тонкой настройки без публичных оповещений.</p>
+        </div>
+        <h3>Основная информация</h3>
+        <form class="main-form">
+            <div class="info-block">
+                <div class="info-block__groop-name">
+                    <p>Название группы</p>
+                    <input  placeholder="Моя новая рабочая группа" type="text">
+                </div>
+                <div class="info-block__alias">
+                    <p>Алиас</p>
+                    <input placeholder="введите алиас" type="text">
+                </div>
+                <div class="info-block__email">
+                    <p>Электронная почта для обращений</p>
+                    <input pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="введиите email" type="text">
+                </div>
+                <div class="info-block__phone">
+                    <p>Телефон представителя</p>
+                    <input pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="+7 (XXX) XXX-XX-XX" type="tel">
+                </div>
+                <div class="info-block__fio">
+                    <p>ФИО представителя</p>
+                    <input placeholder="Введите полные данные представителя" type="text">
+                </div>
+                <div class="info-block__rank">
+                    <p>Должность ответственного</p>
+                    <input placeholder="Введите полное наименование должности" type="text">
+                </div>
+            </div>  
+            <textarea placeholder="Описание рабочей группы для внутреннего использования" cols="30" rows="10"></textarea>
+            <div class="public-discription">
+                <input id="checkbox" type="checkbox" >
+                <p>Публичное описание отличется от внутреннего</p>
+            </div>
+            <textarea cols="30" rows="10"></textarea>
+            <div class="buttons-block">
+                <button type="submit" >Отправить на модерацию</button>
+                <button>Отмена</button>
+                <button>Сохранить в мои черновики</button>
+            </div>
+        </form>
+            
+    </div>
+    
+    <script src="./js/index.js" ></script>
+</body>
+</html>

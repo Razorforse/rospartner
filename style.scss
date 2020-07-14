@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+$main-font: 'Ubuntu', sans-serif;
+
+p,h1,h3,input,textarea,button {
+    font-family: $main-font;
+}
+
+.work-profile {
+    margin: 40px 100px;
+    h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    }
+    
+    p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #333333;
+    }
+
+    p::before {
+    content: "- ";
+    width: 16px;
+    height: 5px;
+    color: #F19932;
+    border-radius: 1px;
+    font-size: 20px;
+    }
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 100px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 80px;
+
+    div {
+        margin: 5px 10px;
+    }
+
+    p {
+        margin: 3px;
+    }
+
+    input {
+        width: 350px;
+        height: 50px;
+    }
+    
+}
+
+.public-discription {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 100px;
+    
+    p {
+        margin: 0;
+    }
+
+}
+
+textarea {
+    margin: 20px 100px;
+}
+
+.buttons-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 100px;
+    :nth-child(1) {
+        width: 216px;
+        height: 45px;
+        background: #2F80ED;
+        border-radius: 2px;
+        margin: 0 10px 0 0;
+    }
+    :nth-child(2) {
+        width: 92px;
+        height: 45px;   
+        background: #E9E9E9;
+        border-radius: 2px;
+        margin: 0 0 0 10px;
+    }
+    :nth-child(3) {
+        width: 231px;
+        height: 45px;
+        margin-left: auto;
+        background: #E9E9E9;
+        border-radius: 2px;
+    }
+}
+
